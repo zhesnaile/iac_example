@@ -1,0 +1,31 @@
+pvesm_local_storage_path: /var/lib/vz
+pvesm_local_storage_iso_subpath: template/iso
+
+iso_images_to_download:
+  - filename: ubuntu-22.04-server-cloudimg-amd64.img
+    url: https://cloud-images.ubuntu.com/releases/22.04/release/ubuntu-22.04-server-cloudimg-amd64.img
+    is_cloud_init_image: true
+    cloud_init_vm_id: 9001
+    cloud_init_vm_instance_template_name: ubuntu-22.04-server-cloudimg-amd64
+    enable_qemu_guest_agent: true
+
+  - filename: Rocky-9-GenericCloud-Base.latest.x86_64.qcow2
+    url: https://dl.rockylinux.org/pub/rocky/9/images/x86_64/Rocky-9-GenericCloud-Base.latest.x86_64.qcow2
+    is_cloud_init_image: true
+    cloud_init_vm_id: 9002
+    cloud_init_vm_instance_template_name: rocky-9-cloudimg-amd64
+    enable_qemu_guest_agent: true
+
+  - filename: ubuntu-24.04-server-cloudimg-amd64.img
+    url: https://cloud-images.ubuntu.com/releases/24.04/release/ubuntu-24.04-server-cloudimg-amd64.img
+    is_cloud_init_image: true
+    cloud_init_vm_id: 9003
+    cloud_init_vm_instance_template_name: ubuntu-24.04-server-cloudimg-amd64
+    enable_qemu_guest_agent: true
+
+  #- filename: Arch-Linux-x86_64-cloudimg.qcow2
+  #  url: https://geo.mirror.pkgbuild.com/images/latest/Arch-Linux-x86_64-cloudimg.qcow2
+  #  is_cloud_init_image: true
+  #  cloud_init_vm_id: 9004
+  #  cloud_init_vm_instance_template_name: arch-linux-cloudimg-amd64
+  #  enable_qemu_guest_agent: false

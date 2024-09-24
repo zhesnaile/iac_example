@@ -1,0 +1,6 @@
+---
+- name: Setup the homeserver
+  hosts: all
+  become: true
+  roles:
+    - vmtemplates
