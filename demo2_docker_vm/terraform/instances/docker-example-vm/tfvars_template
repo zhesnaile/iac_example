@@ -1,0 +1,15 @@
+proxmox_host = ""
+
+api_url = ""
+
+token_secret = ""
+token_id = ""
+
+username = ""
+ssh_public_key = <<EOF
+EOF
+
+proxmox_node = ""
+vm_ip      = ""
+gateway_ip = ""
+
