@@ -5,7 +5,7 @@ Set of sample code for creating and managing VMs with terraform, ansible and clo
 ## Demo 1: VM Templates
 This demo is used to create a VM template in Proxmox using Ansible, it runs a single playbook that connects to a Proxmox host, downloads a cloud-init QCOW2 image and creates a VM template with a basic configuration using that image.
 
-It can be found in the [demo1_templates/] folder.
+It can be found in the [demo1_templates](demo1_templates) folder.
 
 ## Demo 2
 This demo is used to create a VM in Proxmox using terraform, then installing Docker on it and updating the VM.
