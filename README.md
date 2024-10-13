@@ -7,18 +7,10 @@ This demo is used to create a VM template in Proxmox using Ansible, it runs a si
 
 It can be found in the [demo1_templates](demo1_templates) folder.
 
-## Demo 2
-This demo is used to create a VM in Proxmox using terraform, then installing Docker on it and updating the VM.
+## Demo 2: 
+This demo is used to create a VM in Proxmox using terraform and our previously created template, then installing Docker on it.
 
-code used:
-
-Terraform:
-- [ubuntu_vm module](terraform/modules/ubuntu_vm)
-- [vm declaration](terraform/instances/docker_example_vm)
-
-Ansible playbook:
-- [docker_install](ansible/docker_install_example/)
-- [vm_update](ansible/vm_update_example/)
+It can be found in the [demo2_docker_vm/](demo2_docker_vm/) folder.
 
 ## Demo 3
 This demo deploys a free EC2 instance on AWS using terraform
