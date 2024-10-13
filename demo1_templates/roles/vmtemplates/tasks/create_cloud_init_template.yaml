@@ -8,7 +8,7 @@
   when: template_exists_cmd.rc == 0
 
 - name: Create the VM to be used as a cloud-init base for template {{ vm_instance_template_name }}
-  command: qm create {{ vm_id }} -name {{ vm_instance_template_name }} -memory 1024 -net0 virtio,bridge=vmbr0 -cores 1 -sockets 1
+  command: qm create {{ vm_id }} -name {{ vm_instance_template_name }} -memory 1024 -net0 virtio,bridge=vmbr0 --cpu cputype=host -cores 1 -sockets 1
 
 - name: Import the cloud init ISO image into the disk
   command: qm importdisk {{ vm_id }} {{ iso_image_path }} {{ storage }}
