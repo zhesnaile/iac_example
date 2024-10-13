@@ -1,6 +1,6 @@
 ---
 - name: Setup the homeserver
-  hosts: all
+  hosts: proxmoxhosts
   become: true
   roles:
     - vmtemplates

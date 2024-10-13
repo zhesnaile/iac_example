@@ -22,10 +22,3 @@ iso_images_to_download:
     cloud_init_vm_id: 9003
     cloud_init_vm_instance_template_name: ubuntu-24.04-server-cloudimg-amd64
     enable_qemu_guest_agent: true
-
-  #- filename: Arch-Linux-x86_64-cloudimg.qcow2
-  #  url: https://geo.mirror.pkgbuild.com/images/latest/Arch-Linux-x86_64-cloudimg.qcow2
-  #  is_cloud_init_image: true
-  #  cloud_init_vm_id: 9004
-  #  cloud_init_vm_instance_template_name: arch-linux-cloudimg-amd64
-  #  enable_qemu_guest_agent: false
