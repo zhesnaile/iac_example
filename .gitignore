@@ -37,4 +37,5 @@ override.tf.json
 terraform.rc
 
 **/secrets
+**/.secrets
 *_plan
